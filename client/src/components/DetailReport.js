@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Axios from "axios";
 import { Link } from "react-router-dom";
+import "./index.css";
 
 export default class detailReport extends Component {
   constructor(props) {

@@ -49,3 +49,7 @@
 .navigation ul li a:hover {
   background: #00007c;
 }
+
+.container {
+  padding: 50px;
+}
