@@ -8,7 +8,9 @@ const HeaderV = props => {
     return (
       <Navbar style={styles.azul} dark expand="md">
               <Col md = {3}> 
-                 <img style={styles.logo} src = {props.image} alt ={props.title} />     
+                 <Link to ="/">
+                 <img style={styles.logo} src = {props.image} alt ={props.title} />  
+                 </Link>   
               </Col>
               <Col md = {3}>
               <Link to="/seeReports" className ="text-white">REPORTES</Link>
@@ -33,7 +35,7 @@ const styles ={
      background: "#F0F4F8",
      border: 3,
      solid: "#0E153B",
-     borderRadius: 50,
+     borderRadius: 5,
   },
   azul:{
       backgroundColor: "#0E153B",
