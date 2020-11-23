@@ -1,5 +1,6 @@
 import Axios from "axios";
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class editReport extends Component {
   constructor(props) {
@@ -73,9 +74,7 @@ export default class editReport extends Component {
       <div className="container">
         <form>
           <div className="form-group row">
-            <label className="col-sm-2 col-form-label">
-              Fecha de elaboracion
-            </label>
+            <label className="col-sm-2 col-form-label">Proyecto</label>
             <div className="col-md-6">
               <input
                 type="text"
@@ -87,7 +86,7 @@ export default class editReport extends Component {
             </div>
           </div>
           <div className="form-group row">
-            <label className="col-sm-2 col-form-label">Fecha de inicio</label>
+            <label className="col-sm-2 col-form-label">Empresa</label>
             <div className="col-md-6">
               <input
                 type="text"
@@ -100,7 +99,7 @@ export default class editReport extends Component {
           </div>
           <div className="form-group row">
             <label className="col-sm-2 col-form-label">
-              Fecha de finalisacion
+              Datos de contacto de la empresa
             </label>
             <div className="col-md-6">
               <input
@@ -113,7 +112,9 @@ export default class editReport extends Component {
             </div>
           </div>
           <div className="form-group row">
-            <label className="col-sm-2 col-form-label">Estudiante</label>
+            <label className="col-sm-2 col-form-label">
+              Descripcion de las actividades
+            </label>
             <div className="col-md-6">
               <input
                 type="text"
@@ -125,7 +126,9 @@ export default class editReport extends Component {
             </div>
           </div>
           <div className="form-group row">
-            <label className="col-sm-2 col-form-label">institucion</label>
+            <label className="col-sm-2 col-form-label">
+              Avances de las actividades
+            </label>
             <div className="col-md-6">
               <input
                 type="text"
@@ -137,7 +140,9 @@ export default class editReport extends Component {
             </div>
           </div>
           <div className="form-group row">
-            <label className="col-sm-2 col-form-label">Estado</label>
+            <label className="col-sm-2 col-form-label">
+              Dificultades presentadas
+            </label>
             <div className="col-md-6">
               <input
                 type="text"
@@ -149,7 +154,9 @@ export default class editReport extends Component {
             </div>
           </div>
           <div className="form-group row">
-            <label className="col-sm-2 col-form-label">horas</label>
+            <label className="col-sm-2 col-form-label">
+              comentarios para el asesor
+            </label>
             <div className="col-md-6">
               <input
                 type="text"
@@ -166,7 +173,12 @@ export default class editReport extends Component {
             onClick={this.onSubmit}
           >
             Registrar
-          </button>
+          </button>{" "}
+          <Link to="/seeReports">
+            <button type="submit" className="btn btn-primary">
+              Cancelar
+            </button>
+          </Link>
         </form>
       </div>
     );

@@ -8,13 +8,13 @@ export const setErrors = (
   estado
 ) => {
   let errors = {};
-  errors.elaboracion = elaboracion ? "" : "fecha de elaboracion requerido";
-  errors.inicio = inicio ? "" : "fecha de inicio requerido";
-  errors.fin = fin ? "" : "fecha de finalisacion requerido";
-  errors.estudiante = estudiante ? "" : "estudiante requerido";
-  errors.institucion = institucion ? "" : "institucion requerido";
-  errors.horas = horas ? "" : "estado requerido";
-  errors.estado = estado ? "" : "horas requerido";
+  errors.elaboracion = elaboracion ? "" : "proyecto requerido";
+  errors.inicio = inicio ? "" : "empresa requerido";
+  errors.fin = fin ? "" : "datos requerido";
+  errors.estudiante = estudiante ? "" : "descripcion requerido";
+  errors.institucion = institucion ? "" : "avances requerido";
+  errors.horas = horas ? "" : "dificultades requerido";
+  errors.estado = estado ? "" : "comentarios requerido";
 
   return errors;
 };

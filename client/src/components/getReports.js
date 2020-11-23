@@ -46,26 +46,12 @@ export default class getReports extends Component {
                 #
               </th>
               <th scope="col" className="campos">
-                Eleaboracion
+                Proyecto
               </th>
               <th scope="col" className="campos">
-                Fecha ini.
+                Empresa
               </th>
-              <th scope="col" className="campos">
-                Fecha fin
-              </th>
-              <th scope="col" className="campos">
-                Estudiante
-              </th>
-              <th scope="col" className="campos">
-                Institucion
-              </th>
-              <th scope="col" className="campos">
-                Status
-              </th>
-              <th scope="col" className="campos">
-                Horas
-              </th>
+
               <th scope="col" className="campos">
                 Acciones
               </th>
@@ -74,15 +60,13 @@ export default class getReports extends Component {
           <tbody>
             {this.state.posts.map((post, index) => (
               <tr>
-                <th scope="row">{index}</th>
-                <td>{post.elaboracion}</td>
-                <td>{post.inicio}</td>
-                <td>{post.fin}</td>
-                <td>{post.estudiante}</td>
-                <td>{post.institucion}</td>
-                <td>{post.estado}</td>
-                <td>{post.horas}</td>
-                <td>
+                <th scope="row" className="campos">
+                  {index}
+                </th>
+                <td className="campos">{post.elaboracion}</td>
+                <td className="campos">{post.inicio}</td>
+
+                <td className="campos">
                   <Link to={`/edit/${post._id}`}>
                     <button type="button" className="btn btn-warning">
                       <FontAwesomeIcon icon={faEdit} />
@@ -105,6 +89,11 @@ export default class getReports extends Component {
             ))}
           </tbody>
         </table>
+        <Link to="/add">
+          <button type="button" className="btn btn-primary">
+            crear reporte
+          </button>
+        </Link>
       </div>
     );
   }

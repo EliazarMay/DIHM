@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Axios from "axios";
+import { Link } from "react-router-dom";
 
 export default class detailReport extends Component {
   constructor(props) {
@@ -33,21 +34,26 @@ export default class detailReport extends Component {
     return (
       <div className="container">
         <dl className="row">
-          <dt className="col-sm-3">Fecha de elaboracion</dt>
+          <dt className="col-sm-3">Proyecto</dt>
           <dd className="col-sm-9">{elaboracion}</dd>
-          <dt className="col-sm-3">Fecha de inicio</dt>
+          <dt className="col-sm-3">Empresa</dt>
           <dd className="col-sm-9">{inicio}</dd>
-          <dt className="col-sm-3">Fecha de finalisacion</dt>
+          <dt className="col-sm-3">Datos de contacto de la empresa</dt>
           <dd className="col-sm-9">{fin}</dd>
-          <dt className="col-sm-3">Estudiante</dt>
+          <dt className="col-sm-3">Descripcion de las actividades</dt>
           <dd className="col-sm-9">{estudiante}</dd>
-          <dt className="col-sm-3">Institucion</dt>
+          <dt className="col-sm-3">Avances de las actividades</dt>
           <dd className="col-sm-9">{institucion}</dd>
-          <dt className="col-sm-3">Estado</dt>
+          <dt className="col-sm-3">Dificultades presentadas</dt>
           <dd className="col-sm-9">{estado}</dd>
-          <dt className="col-sm-3">Horas</dt>
+          <dt className="col-sm-3">Comentarios para el asesor</dt>
           <dd className="col-sm-9">{horas}</dd>
         </dl>
+        <Link to="/seeReports">
+          <button type="submit" className="btn btn-primary">
+            Regresar
+          </button>
+        </Link>
       </div>
     );
   }
