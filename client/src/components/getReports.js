@@ -91,7 +91,7 @@ export default class getReports extends Component {
         </table>
         <Link to="/add">
           <button type="button" className="btn btn-primary">
-            crear reporte
+            Crear reporte
           </button>
         </Link>
       </div>

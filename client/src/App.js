@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Header 
-      image= "http://www.unicaribe.mx/theme/unicaribe-2018/img/logo-20.png"
+      image= "http://www.unicaribe.mx/theme/unicaribe-2018/img/logo-20-blanco.png"
       title= "Sistema de servicio social"
       />
       <Switch>

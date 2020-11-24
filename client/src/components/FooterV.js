@@ -7,7 +7,7 @@ const FooterV = props => {
             <footer style={styles.footer}>
                 <Row>
                 <Col md = {3}>
-                <Label className ="text-white"  >Universidad del caribe ©2020</Label>
+                <Label className ="text-white"  >Universidad del caribe © 2020</Label>
                 </Col>
                 <Col md = {3}>
                     <a href = "http://www.unicaribe.mx/ubicacion">
@@ -18,7 +18,9 @@ const FooterV = props => {
                     <img style={styles.logo} src = {props.image} alt ={props.title} />     
                 </Col>
                 <Col md = {3}>
-                    <button type="button" className="btn btn-link text-white"> Politicas de privacidad</button>
+                    <a href = "http://www.unicaribe.mx/transparencia/aviso-privacidad">
+                    <button type="button" className="btn btn-link text-white"> Aviso de privacidad</button>
+                    </a>
                 </Col>
                 </Row>
             </footer>
@@ -37,8 +39,8 @@ const styles ={
        borderRadius: 50,
     },
     footer:{
-        marginTop: "10px",
-        padding: "25px",
+        marginTop: "1rem",
+        padding: "2rem",
         backgroundColor: "#0E153B",
         position: "fixed",
         bottom: 0,
