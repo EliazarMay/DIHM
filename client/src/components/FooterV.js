@@ -1,5 +1,5 @@
 import React from 'react';
-import {Col, Container, Row, Label} from "reactstrap"
+import {Col, Container, Row} from "reactstrap"
 
 const FooterV = props => {
     return (
@@ -7,40 +7,32 @@ const FooterV = props => {
             <footer style={styles.footer}>
                 <Row>
                 <Col md = {3}>
-                <Label className ="text-white"  >Universidad del caribe © 2020</Label>
+                <a href="http://www.unicaribe.mx/" className ="text-white"  >Universidad del caribe © 2020</a>
                 </Col>
                 <Col md = {3}>
-                    <a href = "http://www.unicaribe.mx/ubicacion">
-                    <button type="button" className="btn btn-link text-white"> Ubicación</button>
+                    <a href = "http://www.unicaribe.mx/ubicacion" className="text-white">
+                    Ubicación
                     </a>
                 </Col>
                 <Col md = {3}> 
                     <img style={styles.logo} src = {props.image} alt ={props.title} />     
                 </Col>
                 <Col md = {3}>
-                    <a href = "http://www.unicaribe.mx/transparencia/aviso-privacidad">
-                    <button type="button" className="btn btn-link text-white"> Aviso de privacidad</button>
+                    <a href = "http://www.unicaribe.mx/transparencia/aviso-privacidad" className="text-white">
+                    Aviso de privacidad
                     </a>
                 </Col>
                 </Row>
             </footer>
         </Container>
-
     )
 }
 export default FooterV;
 
 const styles ={
-    logo: {
-       maxWidth:200,
-       background: "#F0F4F8",
-       border: 3,
-       solid: "#0E153B",
-       borderRadius: 50,
-    },
     footer:{
         marginTop: "1rem",
-        padding: "2rem",
+        padding: "1rem",
         backgroundColor: "#0E153B",
         position: "fixed",
         bottom: 0,
