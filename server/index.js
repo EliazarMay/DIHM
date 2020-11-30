@@ -17,6 +17,7 @@ app.use(bodyparser.json());
 app.use(cors());
 
 app.use("/posts", require("./routes/post"));
+app.use("/offers", require("./routes/offer"));
 
 app.get("/", (req, res) => {
   res.json({ project: "MERN CRUD api" });

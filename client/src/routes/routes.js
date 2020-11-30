@@ -4,7 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import CreateReport from "../components/createReport";
 import EditReport from "../components/editReport";
 import DetailReport from "../components/DetailReport";
-
+import OfertaProyectos from "../components/ofertaProyectos";
 import Header from "../components/HeaderV";
 import Footer from "../components/FooterV";
 import Home from "../components/Home";
@@ -19,6 +19,7 @@ export default class routes extends Component {
         />
         <Switch>
           <Route exact path="/home" component={Home} />
+          <Route exact path="/oferta" component={OfertaProyectos} />
           <Route exact path="/seeReports" component={GetReports} />
           <Route path="/posts/:id" component={DetailReport} />
           <Route path="/add" component={CreateReport} />
