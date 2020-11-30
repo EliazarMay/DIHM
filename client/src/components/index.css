@@ -53,3 +53,11 @@
 .container {
   padding: 50px;
 }
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background: #0e153b;
+  border-color: #0e153b;
+}
