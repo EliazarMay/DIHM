@@ -186,7 +186,8 @@ export default class formV extends Component {
             </Label>
             <Col sm={10}>
               <Input
-                type="text"
+                type="textarea"
+                style={{ height: 200 }}
                 className="form-control"
                 name="estudiante"
                 id="idestudiante"
@@ -207,7 +208,8 @@ export default class formV extends Component {
             </Label>
             <Col sm={10}>
               <Input
-                type="text"
+                type="textarea"
+                style={{ height: 200 }}
                 className="form-control"
                 name="institucion"
                 id="idinstitucion"
@@ -228,7 +230,8 @@ export default class formV extends Component {
             </Label>
             <Col sm={10}>
               <Input
-                type="text"
+                type="textarea"
+                style={{ height: 200 }}
                 className="form-control"
                 name="estado"
                 id="idestado"
@@ -247,7 +250,8 @@ export default class formV extends Component {
             </Label>
             <Col sm={10}>
               <Input
-                type="text"
+                type="textarea"
+                style={{ height: 200 }}
                 className="form-control"
                 name="horas"
                 id="idhoras"

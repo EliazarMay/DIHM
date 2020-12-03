@@ -117,7 +117,8 @@ export default class editReport extends Component {
             </label>
             <div className="col-md-6">
               <input
-                type="text"
+                type="textarea"
+                style={{ height: 200 }}
                 className="form-control"
                 name="estudiante"
                 value={this.state.estudiante}
@@ -131,7 +132,8 @@ export default class editReport extends Component {
             </label>
             <div className="col-md-6">
               <input
-                type="text"
+                type="textarea"
+                style={{ height: 200 }}
                 className="form-control"
                 name="institucion"
                 value={this.state.institucion}
@@ -145,7 +147,8 @@ export default class editReport extends Component {
             </label>
             <div className="col-md-6">
               <input
-                type="text"
+                type="textarea"
+                style={{ height: 200 }}
                 className="form-control"
                 name="estado"
                 value={this.state.estado}
@@ -159,7 +162,8 @@ export default class editReport extends Component {
             </label>
             <div className="col-md-6">
               <input
-                type="text"
+                type="textarea"
+                style={{ height: 200 }}
                 className="form-control"
                 name="horas"
                 value={this.state.horas}
