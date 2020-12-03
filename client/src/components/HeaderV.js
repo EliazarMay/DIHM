@@ -23,7 +23,7 @@ const HeaderV = (props) => {
         </Link>
       </Col>
       <Col md={2}>
-        <Link to="/login" className="text-white" style={styles.baseText}>
+        <Link to="/logout" className="text-white" style={styles.baseText}>
           CERRAR SESIÓN
         </Link>
       </Col>

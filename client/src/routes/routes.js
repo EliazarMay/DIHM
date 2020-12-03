@@ -8,6 +8,8 @@ import OfertaProyectos from "../components/ofertaProyectos";
 import Header from "../components/HeaderV";
 import Footer from "../components/FooterV";
 import Home from "../components/Home";
+import Login from "../components/Login";
+import LogOut from "../components/logOut";
 
 export default class routes extends Component {
   render() {
@@ -18,6 +20,8 @@ export default class routes extends Component {
           title="Sistema de servicio social"
         />
         <Switch>
+          <Route exact path="/" component={Login} />
+          <Route path="/logout" component={LogOut} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/oferta" component={OfertaProyectos} />
           <Route exact path="/seeReports" component={GetReports} />
