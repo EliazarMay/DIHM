@@ -11,3 +11,5 @@
 **En la segunda terminal entramos a la carpeta `server` y ejecutar el comando `npm run dev`**
 
 **En la tercere terminal entramos a la carpeta `client` y ejecutar el comando `npm start`**
+
+**El usuario y contraseña para acceder es "admin"**
